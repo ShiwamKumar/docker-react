@@ -17,4 +17,4 @@ services:
     volumes: 
       - /usr/src/node_modules
       - .:/usr/src
-    command: npm run -e CI=true test
+    command: npm run test
