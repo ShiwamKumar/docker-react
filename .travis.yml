@@ -1,4 +1,5 @@
 sudo: required
+language: generic
 
 services:
   - docker
@@ -11,10 +12,10 @@ script:
 
 deploy:
   provider: elasticbeanstalk
-  region : "us-east-2"
-  app: "dockerrrs"
-  env: "Dockerrrs-env"
-  bucket_name: "elasticbeanstalk-us-east-2-554661655997"
+  region : 'us-east-2'
+  app: 'dockerrrs'
+  env: 'Dockerrrs-env'
+  bucket_name: 'elasticbeanstalk-us-east-2-554661655997'
   bucket_path: "dockerrrs"
   on:
     branch: master
